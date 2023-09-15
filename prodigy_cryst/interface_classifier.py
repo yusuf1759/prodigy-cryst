@@ -20,6 +20,10 @@ import pickle
 import sys
 import warnings
 from pathlib import Path
+from sklearn.ensemble import _forest
+from sklearn import tree
+sys.modules['sklearn.ensemble.forest'] = _forest
+sys.modules['sklearn.tree.tree'] = tree
 
 try:
     from Bio.PDB import NeighborSearch
