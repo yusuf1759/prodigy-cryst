@@ -1,0 +1,29 @@
+[project]
+name = "prodigy_cryst"
+dynamic = ['version']
+dependencies = [
+    'biopython==1.81',
+    'Cython==3.0.2',
+    'freesasa==2.2.0.post3',
+    'numpy==1.26.0rc1',
+    'scikit-learn==1.2.2',
+    'scipy==1.11.2'
+]
+
+[build-system]
+build-backend = 'setuptools.build_meta'
+requires = [
+    'setuptools >= 65.4.0',
+    'setuptools_scm[toml] >= 7.0.5',
+]
+
+[tool.setuptools_scm]
+root = '.'
+
+[tool.setuptools.packages.find]
+where = ['.']
+include = ['prodigy_cryst']
+namespaces = false
+
+[project.scripts]
+prodigy_cryst = "prodigy_cryst.interface_classifier:main"
