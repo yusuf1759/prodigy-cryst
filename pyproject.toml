@@ -2,7 +2,8 @@
 name = "prodigy_cryst"
 dynamic = ['version']
 dependencies = [
-    'biopython==1.81',
+    #'biopython==1.81',
+    'biopython',
     'Cython==3.0.2',
     'freesasa==2.2.0.post3',
     'numpy',
