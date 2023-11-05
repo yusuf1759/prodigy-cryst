@@ -5,9 +5,9 @@ dependencies = [
     'biopython==1.81',
     'Cython==3.0.2',
     'freesasa==2.2.0.post3',
-    'numpy==1.26.0rc1',
-    'scikit-learn==1.2.2',
-    'scipy==1.11.2'
+    'numpy',
+    'scikit-learn',
+    'scipy'
 ]
 
 [build-system]
